@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Luv Raj — frontend developer building fast, accessible interfaces with HTML, CSS and JavaScript.">
+<meta name="author" content="Luv Raj">
+<meta name="theme-color" content="#071a1f">
+<title>Luv Raj — Frontend Developer</title>
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!-- Reading progress bar -->
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<a class="skip-link" href="#home">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-head" id="siteHead">
+  <div class="shell head-inner">
+    <a href="#home" class="brand" aria-label="Luv Raj, home">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="./lr-logo.png" alt="Luv Raj logo" width="40" height="40" loading="lazy">
+        <!-- <svg viewBox="0 0 32 32" width="32" height="32"><path d="M4 26 16 6l12 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M10.5 20h11" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg> -->
+      </span>
+      <span class="brand-text">Luv<span class="brand-dot">.</span></span>
+
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+      <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+
+    <nav id="primaryNav" class="nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a class="nav-link is-active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#resume">Resume</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-ghost nav-cta" href="Resume.pdf.pdf" download>Download resume</a>
+    </nav>
+  </div>
+</header>
+<div class="nav-scrim" id="navScrim" hidden></div>
+
+<main>
+
+<!-- ============ HOME / HERO ============ -->
+<section id="home" class="hero" data-nav="home">
+  <div class="hero-light" id="heroLight" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="shell hero-inner">
+    <p class="hero-hello reveal-line">Hello — I'm</p>
+
+    <h1 class="hero-name">
+      <span class="wipe"><span>Luv</span></span>
+      <span class="wipe"><span>Raj</span></span>
+    </h1>
+
+    <div class="hero-meta">
+      <p class="hero-role reveal-line">
+        Frontend developer. Turning  
+        <em>ideas</em> into clean
+            interactive web experiences.
+      </p>
+      <p class="hero-sub reveal-line">
+        Frontend developer and Computer Science student who loves building clean, responsive and interactive web experiences. I turn ideas into functional interfaces with HTML, CSS, JavaScript and a touch of creativity.
+      .
+      </p>
+      <div class="hero-actions reveal-line">
+        <a class="btn btn-solid" href="#projects">See my work</a>
+        <a class="btn btn-line" href="Resume.pdf.pdf" download>Download resume</a>
+      </div>
+    </div>
+
+    <ul class="hero-stats reveal-line">
+      <li><b>2</b> projects shipped</li>
+      <li><b>98</b> Lighthouse score, average</li>
+      <li><b>2</b> years writing CSS daily</li>
+    </ul>
+  </div>
+
+  <a class="hero-scroll" href="#about" aria-label="Scroll to About">
+    <span class="hero-scroll-track" aria-hidden="true"><i></i></span>
+    <span>Scroll</span>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="band" data-nav="about">
+  <div class="shell split">
+    <div class="split-aside">
+      <h2 class="band-title">About</h2>
+      <p class="band-note">Who's behind the commits</p>
+    </div>
+
+    <div class="split-main">
+      <div class="about-portrait">
+        <img src="./luvraj.png" alt="Illustrated portrait of Luv Raj" width="320" height="380" loading="lazy">
+        <span class="portrait-tag">Available for internships</span>
+      </div>
+      <div class="about-copy">
+        <p class="lede">
+          I’m Luv Raj, a Computer Science student and aspiring Frontend Developer with a passion for creating clean,
+           responsive, and user-friendly websites. I enjoy turning ideas 
+           into interactive web experiences using HTML, CSS, and JavaScript.
+        </p>
+        <p>
+          Currently, I’m developing my skills in frontend development, problem-solving, 
+          and modern web technologies while working on practical projects such as a Hostel Management System. 
+          I believe in learning by building, experimenting with new ideas, and continuously improving my skills.
+        </p>
+        <p>
+          When I’m not coding, I enjoy exploring new technology, working on creative ideas, and learning something new.
+           My goal is to grow as a developer and build digital experiences that are both useful and engaging.
+        </p>
+
+        <dl class="facts">
+          <div><dt>Based in</dt><dd> Bhiwani, Haryana, India</dd></div>
+          <div><dt>Focus</dt><dd>Frontend engineering &amp; interface design</dd></div>
+          <div><dt>Studying</dt><dd>B.Tech Computer Science, 2024–2028</dd></div>
+          <div><dt>Open to</dt><dd>Internships, freelance, collaboration</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="band band-alt" data-nav="skills">
+  <div class="shell split">
+    <div class="split-aside">
+      <h2 class="band-title">Skills</h2>
+      <p class="band-note">What I reach for, and how often</p>
+    </div>
+
+    <div class="split-main">
+      <div class="skill-groups">
+        <article class="skill-group">
+          <h3>Building the page</h3>
+          <ul class="meters">
+            <li class="meter" data-level="95">
+              <span class="meter-name">HTML &amp; semantics</span>
+              <span class="meter-track"><i></i></span>
+              <span class="meter-val">95%</span>
+            </li>
+            <li class="meter" data-level="92">
+              <span class="meter-name">CSS, Grid &amp; Flexbox</span>
+              <span class="meter-track"><i></i></span>
+              <span class="meter-val">92%</span>
+            </li>
+            <li class="meter" data-level="86">
+              <span class="meter-name">JavaScript (ES6+)</span>
+              <span class="meter-track"><i></i></span>
+              <span class="meter-val">86%</span>
+            </li>
+            <li class="meter" data-level="78">
+              <span class="meter-name">React</span>
+              <span class="meter-track"><i></i></span>
+              <span class="meter-val">78%</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="skill-group">
+          <h3>Shipping it</h3>
+          <ul class="meters">
+            <li class="meter" data-level="84">
+              <span class="meter-name">Git &amp; GitHub</span>
+              <span class="meter-track"><i></i></span>
+              <span class="meter-val">84%</span>
+            </li>
+            <li class="meter" data-level="80">
+              <span class="meter-name">Vite &amp; build tooling</span>
+              <span class="meter-track"><i></i></span>
+              <span class="meter-val">80%</span>
+            </li>
+            <li class="meter" data-level="74">
+              <span class="meter-name">Figma to code</span>
+              <span class="meter-track"><i></i></span>
+              <span class="meter-val">74%</span>
+            </li>
+            <li class="meter" data-level="68">
+              <span class="meter-name">Node &amp; REST APIs</span>
+              <span class="meter-track"><i></i></span>
+              <span class="meter-val">68%</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="chips">
+        <h3 class="chips-title">Also comfortable with</h3>
+        <ul>
+          <li>TypeScript</li><li>Sass</li><li>Python</li><li>Accessibility (WCAG&nbsp;2.2)</li>
+          <li>Responsive images</li><li>Web performance</li><li>Mysql</li><li>MongoDB</li>
+          <li>Express</li><li>Netlify &amp; Vercel</li><li>Ms.Excel</li><li>REST &amp; JSON</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="band" data-nav="projects">
+  <div class="shell">
+    <div class="band-head">
+      <div>
+        <h2 class="band-title">Projects</h2>
+        <p class="band-note">two things I built, broke, and rebuilt</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter is-on" data-filter="all">All</button>
+        <button class="filter" data-filter="app">Web apps</button>
+        <button class="filter" data-filter="ui">Interface work</button>
+        <button class="filter" data-filter="js">Plain JavaScript</button>
+      </div>
+    </div>
+
+    <div class="work" id="workGrid">
+
+      <article class="card card-lead" data-tags="app js">
+        <div class="card-media">
+          <img src="./campusintel.png" alt="Campusintel placement system interface" loading="lazy" width="800" height="500">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Campusintel</h3>
+          <p class="card-kicker">Campus Placement Management System</p>
+          <p class="card-text">
+           The Campus Placement Management System is a web-based platform designed to connect students and companies for internship
+            and job opportunities. It works similarly to job portals but is focused on campus placement activities.
+          </p>
+          <ul class="tags"><li>JavaScript</li><li>CSS Grid</li><li>REST API</li><li>Service worker</li></ul>
+          <div class="card-links">
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Live demo</a>
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Source code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card-lead" data-tags="app js">
+        <div class="card-media">
+          <img src="./hostel.png.jpeg" alt="Hostel Management System" loading="lazy" width="600" height="420">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Hostel Management </h3>
+          <p class="card-kicker">Hostel Management System</p>
+          <p class="card-text">
+            A web-based Hostel Management System designed to simplify and organize hostel-related activities through a user-friendly digital platform. 
+            The system provides an attractive interface with a login page and dashboard, making hostel information easier to access and manage.
+          </p>
+          <ul class="tags"><li>Html</li><li>Javascript</li><li>LocalStorage</li></ul>
+          <div class="card-links">
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Live demo</a>
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Source code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- <article class="card" data-tags="ui">
+        <div class="card-media">
+          <img src="assets/img/project-pagecraft.svg" alt="Pagecraft writing app with a side-by-side markdown editor and preview" loading="lazy" width="600" height="420">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Pagecraft</h3>
+          <p class="card-kicker">Markdown writing app</p>
+          <p class="card-text">
+            A distraction-free editor with live preview, a typographic scale you
+            can adjust while writing, and a dark mode that respects the system setting.
+          </p>
+          <ul class="tags"><li>JavaScript</li><li>Design system</li><li>Dark mode</li></ul>
+          <div class="card-links">
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Live demo</a>
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Source code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-tags="app ui">
+        <div class="card-media">
+          <img src="assets/img/project-trailhead.svg" alt="Trailhead trip planner showing a route with numbered stops" loading="lazy" width="600" height="420">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Trailhead</h3>
+          <p class="card-kicker">Trip planner</p>
+          <p class="card-text">
+            Drag stops into order, see the day fill up, and share the plan with a
+            link. Built to teach myself drag-and-drop that also works from a keyboard.
+          </p>
+          <ul class="tags"><li>React</li><li>Drag &amp; drop</li><li>Accessibility</li></ul>
+          <div class="card-links">
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Live demo</a>
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Source code</a>
+          </div>
+        </div>
+      </article> -->
+
+      <!-- <article class="card" data-tags="js">
+        <div class="card-media">
+          <img src="assets/img/project-sortify.svg" alt="Sortify algorithm visualiser with coloured sorting bars" loading="lazy" width="600" height="420">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Sortify</h3>
+          <p class="card-kicker">Algorithm visualiser</p>
+          <p class="card-text">
+            Watch six sorting algorithms race. Adjustable speed and array size,
+            with the comparison count ticking up so the Big-O difference is visible.
+          </p>
+          <ul class="tags"><li>Vanilla JS</li><li>Canvas</li><li>Animation</li></ul>
+          <div class="card-links">
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Live demo</a>
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Source code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-tags="ui js">
+        <div class="card-media">
+          <img src="assets/img/project-chatterbox.svg" alt="Chatterbox chat interface with message bubbles and a typing indicator" loading="lazy" width="600" height="420">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Chatterbox</h3>
+          <p class="card-kicker">Chat interface</p>
+          <p class="card-text">
+            A messaging UI with typing indicators, read receipts and a thread list
+            that collapses into a single pane on small screens.
+          </p>
+          <ul class="tags"><li>JavaScript</li><li>WebSockets</li><li>Responsive UI</li></ul>
+          <div class="card-links">
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Live demo</a>
+            <a class="link-arrow" href="#" target="_blank" rel="noopener">Source code</a>
+          </div>
+        </div>
+      </article> -->
+
+    </div>
+    <p class="work-empty" id="workEmpty" hidden>No projects in that category yet. Pick another filter.</p>
+  </div>
+</section>
+
+<!-- ============ RESUME ============ -->
+<section id="resume" class="band band-alt" data-nav="resume">
+  <div class="shell split">
+    <div class="split-aside">
+      <h2 class="band-title">Resume</h2>
+      <p class="band-note">The short version</p>
+      <a class="btn btn-solid btn-block" href="Resume.pdf.pdf" download>
+        Download PDF
+        <span class="btn-meta">A4 · 48&nbsp;KB</span>
+      </a>
+    </div>
+
+    <div class="split-main">
+      <div class="cv">
+        <h3 class="cv-head">Experience</h3>
+        <ol class="timeline">
+          <li>
+            <span class="tl-when">2026</span>
+            <h4>Backend  developer</h4>
+            <p class="tl-where">Internship · Noida</p>
+            <p>Working on backend development projects, focusing on APIs and database management</p>
+          </li>
+          <!-- <li>
+            <span class="tl-when">Summer 2025</span>
+            <h4>Frontend intern</h4>
+            <p class="tl-where">Brightloom Studio · Chandigarh</p>
+            <p>Converted Figma files into responsive components, wrote the team's
+               first accessibility checklist, and fixed 40+ layout bugs across three products.</p>
+          </li> -->
+          <!-- <li>
+            <span class="tl-when">2024 — 2025</span>
+            <h4>Web lead, campus tech society</h4>
+            <p class="tl-where">University · Yamuna Nagar</p>
+            <p>Rebuilt the society site and its event registration flow. Sign-ups
+               went from 120 to 500 across two festivals.</p>
+          </li> -->
+        </ol>
+
+        <h3 class="cv-head">Education</h3>
+        <ol class="timeline">
+          <li>
+            <span class="tl-when">2024 — 2028</span>
+            <h4>B.Tech, Computer Science</h4>
+            <p class="tl-where">BRCM College of Engineering and Technology, Bhiwani haryana</p>
+            <p>Current purshing B.tech in Computer science and Engineering with a focus on web development  
+               .</p>
+          </li>
+          <li>
+            <span class="tl-when">2024</span>
+            <h4>Senior Secondary, Science</h4>
+            <p class="tl-where">BSEB · 66%</p>
+            <p>Mathematics, physics and computer science.</p>
+          </li>
+        </ol>
+
+        <h3 class="cv-head">Certifications</h3>
+        <ul class="certs">
+          <li><b>Cyfuture Backend Developer </b> — Internship, 2026</li>
+          <li><b>Engineer Day Hackathon</b> — work on project 2025</li>
+          <li><b>PMKVY</b> — IT Skill India  2024</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="band contact" data-nav="contact">
+  <div class="shell split">
+    <div class="split-aside">
+      <h2 class="band-title">Contact</h2>
+      <p class="band-note">Tell me what you're building</p>
+
+      <ul class="contact-list">
+        <li>
+          <span class="ci" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+          </span>
+          <a href="mailto:luvraj9451@gmail.com">luvraj9451@gmail.com</a>
+        </li>
+        <li>
+          <span class="ci" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v3a2.5 2.5 0 0 1-2.8 2.5A17 17 0 0 1 3.5 5.8 2.5 2.5 0 0 1 6 3Z"/></svg>
+          </span>
+          <a href="tel:+919835980145">+91 9835980145</a>
+        </li>
+        <li>
+          <span class="ci" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          </span>
+          <span>Behal Bhiwani, Haryana</span>
+        </li>
+      </ul>
+
+      <ul class="socials">
+        <li><a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span>GitHub</span></a></li>
+        <li><a href="  https://www.linkedin.com/in/luv-raj-5b1811333  " aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05A4.16 4.16 0 0 1 17.6 8.7c4 0 4.4 2.5 4.4 5.8V21h-4v-5.6c0-1.3-.02-3-1.9-3-1.9 0-2.2 1.4-2.2 2.9V21h-4V9Z"/></svg><span>LinkedIn</span></a></li>
+        <li><a href="#" aria-label="CodePen"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2.7 22 9v6l-10 6.3L2 15V9l10-6.3Z"/><path d="M2 9l10 6 10-6M12 15v6.3M12 2.7V9M2 15l10-6 10 6"/></svg><span>CodePen</span></a></li>
+      </ul>
+    </div>
+
+    <div class="split-main">
+      <form class="form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name" placeholder="Luv Bhardwaj">
+          <p class="error" id="err-name" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="bhardwaj@example.com">
+          <p class="error" id="err-email" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Internship opportunity">
+          <p class="error" id="err-subject" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="A few lines about the role or project…"></textarea>
+          <p class="hint"><span id="charCount">0</span> / 600 characters</p>
+          <p class="error" id="err-message" role="alert"></p>
+        </div>
+
+        <button type="submit" class="btn btn-solid btn-submit" id="submitBtn">Send message</button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-foot">
+  <div class="shell foot-inner">
+    <p class="foot-name">Luv Raj</p>
+    <nav aria-label="Footer">
+      <ul class="foot-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="foot-note">Hand-written HTML, CSS and JavaScript. No frameworks harmed.</p>
+    <p class="foot-copy">&copy; <span id="year">2026</span>Luv Raj</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
